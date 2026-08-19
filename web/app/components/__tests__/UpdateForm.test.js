@@ -186,7 +186,6 @@ describe("UpdateForm saving submissions", () => {
     render(<UpdateForm auth={auth} onPosted={onPosted} />);
 
     const textarea = screen.getByPlaceholderText(/what's your status today/i);
-    const select = screen.getByRole("combobox");
     const button = screen.getByRole("button", { name: /post update/i });
 
     fireEvent.change(textarea, {
@@ -218,7 +217,6 @@ describe("UpdateForm saving submissions", () => {
     render(<UpdateForm auth={auth} onPosted={onPosted} />);
 
     const textarea = screen.getByPlaceholderText(/what's your status today/i);
-    const select = screen.getByRole("combobox");
     const button = screen.getByRole("button", { name: /post update/i });
 
     fireEvent.change(textarea, {
